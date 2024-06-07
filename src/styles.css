@@ -48,6 +48,7 @@ select {
   color: var(--white);
   border: 0;
   font-family: var(--font-family-roboto);
+  border-radius: 3px;
 }
 
 .note-form button:hover {
@@ -98,6 +99,8 @@ h1 {
   border: none;
   margin: 2px;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
 }
 
 .note button:hover {

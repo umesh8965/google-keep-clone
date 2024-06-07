@@ -11,12 +11,16 @@ const Note = ({ note, onToggleTask, onDeleteNote, onEditNote }) => {
     setIsEditing(false);
   };
 
+  const handleCancel = () => {
+    setIsEditing(false);
+  }
+
   const isListNote = note.content.length > 1 || note.content[0].completed !== undefined;
 
   return (
     <div className="note">
       {isEditing ? (
-        <div>
+        <div className='note-form'>
           <input
             type="text"
             required
@@ -29,6 +33,7 @@ const Note = ({ note, onToggleTask, onDeleteNote, onEditNote }) => {
             onChange={(e) => setEditContent(e.target.value)}
           />
           <button onClick={handleSave}>Save</button>
+          <button onClick={handleCancel}>Cancel</button>
         </div>
       ) : (
         <div>
