@@ -8,6 +8,7 @@
   --button-hover-bg: #454749;
   --white: #ffffff;
   --font-family-roboto: "roboto", sans-serif;
+  --border-color:#bbbbbb;
 }
 
 body{
@@ -30,6 +31,9 @@ h2{
 select {
 	padding: 10px;
 	width: 100%;
+  background: #fff;
+  border: solid 1px var(--border-color);
+  border-radius: 3px;
 }
 .note-form input,
 .note-form textarea {
@@ -39,6 +43,8 @@ select {
   font-size: 16px;
   box-sizing: border-box;
   font-family: var(--font-family-roboto);
+  border: solid 1px var(--border-color);
+  border-radius: 3px;
 }
 
 .note-form button {
