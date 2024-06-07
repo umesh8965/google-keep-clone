@@ -3,27 +3,28 @@
 
 
 :root {
-  --note-bg: #ededed;
+  --note-bg: #f3f3f3;
+  --note-border:#dfdfdf;
   --button-bg: #1b252c;
   --button-hover-bg: #454749;
   --white: #ffffff;
-  --font-family-roboto: "roboto", sans-serif;
+  --font-family-roboto: "Roboto", sans-serif;
   --border-color:#bbbbbb;
 }
 
 body{
     font-family: var(--font-family-roboto);
+    margin: 0;
+    font-size: 14px;
 }
-.app {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
+
 
 .form-holder {
   display: flex;
   justify-content: center;
   margin: 0 auto 3rem;
-  max-width: 300px;
+  max-width: 400px;
+  min-width: 320px;
 }
 h2{
     margin: 10px 0;
@@ -34,13 +35,14 @@ select {
   background: #fff;
   border: solid 1px var(--border-color);
   border-radius: 3px;
+  font-family: var(--font-family-roboto);
 }
 .note-form input,
 .note-form textarea {
   width: 100%;
   margin: 12px 0;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   box-sizing: border-box;
   font-family: var(--font-family-roboto);
   border: solid 1px var(--border-color);
@@ -49,7 +51,7 @@ select {
 
 .note-form button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: var(--button-bg);
   color: var(--white);
   border: 0;
@@ -63,10 +65,14 @@ select {
 
 .note {
   background: var(--note-bg);
-  border: 1px solid var(--white);
+  border: 1px solid var(--note-border);
   padding: 15px;
   margin-bottom: 10px;
   cursor: grab;
+  border-radius: 6px;
+}
+.note:hover {
+  border: 1px solid var(--border-color);
 }
 
 .task {
@@ -99,13 +105,13 @@ h1 {
 }
 .note button {
   margin-top: 10px;
-  padding: 5px 10px;
+  padding: 10px 12px;
   background-color: var(--button-bg);
   color: var(--white);
   border: none;
   margin: 2px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 3px;
 }
 

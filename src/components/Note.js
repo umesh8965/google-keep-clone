@@ -56,7 +56,7 @@ const Note = ({ note, onToggleTask, onDeleteNote, onEditNote }) => {
               <p>{note.content[0].text}</p>
             )}
           </div>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
+          <button onClick={() => setIsEditing(true)}>Edit Note</button>
           <button onClick={() => onDeleteNote(note.id)}>Delete Note</button>
         </div>
       )}
